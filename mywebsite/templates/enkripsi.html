@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+<head>
+    <title>{{judul}}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+<div class="login">
+
+<h2>{{judul}}</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    <h4>Masukan Teks</h4>
+    <textarea type="text" name="teks" id="teks"></textarea>
+    <br>
+    <h4>Masukan Kunci</h4>
+    <input type="text" name="kunci" id="kunci">
+    <br>
+    <br>
+    <button type="Submit">ENKRIPSI</button>
+</form>
+<h4>{{hasil}}</h4>
+<textarea>{{e}}</textarea>
+
+<h3><a href="/" title="">Kembali</a></h3>
+</div>
+
+</body>
+</html>

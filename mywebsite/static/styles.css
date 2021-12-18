@@ -1,0 +1,15 @@
+body{
+margin:10;
+padding:10px;
+background-color:pink;
+justify-content:center;
+}
+.login{
+background-color:#fff;
+width:350px;
+text-align:center;
+padding:40px;
+box-sizing:border-box;
+border-radius:10px;
+
+}
